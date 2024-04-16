@@ -12,12 +12,7 @@ public class FreeBook {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     private String title;
-    private String description;
     private String image_url;
     private String book_link;
-    private String quote1;
-    private String quote2;
-    private String quote3;
 }
