@@ -46,7 +46,7 @@ public class FreeBookService {
     @Autowired
     BookRepository bookRepository;
 
-    public List<Book> retrieveAllFreeBook() {
+    public List<Book> retrieveAllFreeBooks() {
         return bookRepository.findByPrice(0.0);
     }
 

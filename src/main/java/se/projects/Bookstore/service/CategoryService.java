@@ -47,19 +47,11 @@ public class CategoryService {
     @Autowired
     BookRepository bookRepository;
 
-    public List<Book> retrieveAllCategoryBook() {
+    public List<Book> retrieveAllCategoryBooks() {
         return bookRepository.findAll();
     }
 
     public List<Book> retrieveSpecificCategoryBook(String category) {
         return bookRepository.findByCategory(category);
     }
-
-//    public Book addNewCategoryBook(Book book) {
-//        return bookRepository.save(book);
-//    }
-//
-//    public void removeSpecificCategoryBook(Integer id) {
-//        bookRepository.deleteById(id);
-//    }
 }

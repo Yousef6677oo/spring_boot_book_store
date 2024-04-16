@@ -56,7 +56,7 @@ public class CategoryController {
 
     @GetMapping("/all-category")
     public List<Book> getAllCategoryBooks() {
-        return categoryService.retrieveAllCategoryBook();
+        return categoryService.retrieveAllCategoryBooks();
     }
 
     @GetMapping("/category/{category}")

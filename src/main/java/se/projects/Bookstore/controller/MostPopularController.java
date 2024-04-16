@@ -58,7 +58,7 @@ public class MostPopularController {
 
     @GetMapping("/most-popular")
     public List<Book> getAllMostPopularBooks() {
-        return mostPopularService.retrieveAllMostPopularBook();
+        return mostPopularService.retrieveAllMostPopularBooks();
     }
 
     @GetMapping("/most-popular/{id}")

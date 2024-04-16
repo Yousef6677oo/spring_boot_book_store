@@ -57,7 +57,7 @@ public class FreeBookController {
 
     @GetMapping("/free-book")
     public List<Book> getAllFreeBooks() {
-        return freeBookService.retrieveAllFreeBook();
+        return freeBookService.retrieveAllFreeBooks();
     }
 
     @GetMapping("/free-book/{id}")

@@ -49,7 +49,7 @@ public class MostPopularService {
     @Autowired
     BookRepository bookRepository;
 
-    public List<Book> retrieveAllMostPopularBook() {
+    public List<Book> retrieveAllMostPopularBooks() {
         return bookRepository.findAll();
     }
 
@@ -57,12 +57,4 @@ public class MostPopularService {
         Optional<Book> bookOptional = bookRepository.findById(id);
         return Optional.of(bookOptional.orElse(new Book())); // Return empty object if null
     }
-
-//    public Book addNewMostPopularBook(Book book) {
-//        return bookRepository.save(book);
-//    }
-//
-//    public void removeSpecificMostPopularBook(Integer id) {
-//        bookRepository.deleteById(id);
-//    }
 }
