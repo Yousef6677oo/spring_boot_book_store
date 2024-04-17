@@ -28,4 +28,9 @@ public class BookController {
     public void removeBook(@PathVariable Integer id) {
         bookService.removeBook(id);
     }
+
+    @GetMapping("/search-book/{keyword}")
+    public List<Book> searchBook(@PathVariable String keyword) {
+        return bookService.searchBooks(keyword);
+    }
 }
